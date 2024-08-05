@@ -39,7 +39,7 @@
   font-size: 24px;
   background: var(--primary);
   color: #fff;
-  border-radius: 50%;
+  border-radius: 16px;
   width: 40px;
   height: 40px;
   border: none;
@@ -61,7 +61,7 @@
   flex-direction: column;
   gap: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  width: 150px; /* Adjust width as needed */
+  width: 150px; 
 }
 
 .tooltip-header {
@@ -78,7 +78,7 @@
 .color-dot {
   width: 20px;
   height: 20px;
-  border-radius: 50%;
+  border-radius: 8px;
   cursor: pointer;
 }
 
