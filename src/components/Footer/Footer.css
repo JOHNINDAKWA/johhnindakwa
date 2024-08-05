@@ -27,7 +27,60 @@
   font-size: 0.8rem;
 }
 
+.color-palette-container {
+  position: fixed;
+  right: 20px;
+  bottom: 140px;
+  z-index: 30;
+}
 
+.color-palette-button {
+  cursor: pointer;
+  font-size: 24px;
+  background: var(--primary);
+  color: #fff;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.color-palette-tooltip {
+  position: absolute;
+  bottom: 60px;
+  right: 0;
+  z-index: 30;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 150px; /* Adjust width as needed */
+}
+
+.tooltip-header {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.color-palette-options {
+  display: flex;
+  justify-content: space-between;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  cursor: pointer;
+}
 
 .whatsapp-button {
   position: fixed;
@@ -82,13 +135,11 @@
   outline: none;
 }
 
-
-.back-to-top .icon{
+.back-to-top .icon {
   font-size: 22px;
   transform: rotate(90deg);
   animation: bounce 2s infinite;
 }
-
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -101,4 +152,3 @@
     transform: translateY(-4px);
   }
 }
-

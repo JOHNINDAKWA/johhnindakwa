@@ -1,3 +1,40 @@
+.navbar-item a.active .tooltip {
+  display: block;
+}
+
+.navbar-item .tooltip {
+  display: none;
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--primary);
+  position: absolute;
+  right: 35px;
+  top: -20px;
+  background-color: #fff;
+  padding: 6px 13px;
+  border-radius: 10px;
+  border: 1px solid var(--primary);
+  z-index: 5;
+  white-space: nowrap;
+}
+
+.navbar-item .tooltip::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  right: -20px; 
+  transform: translateY(-50%);
+  transform: rotate(180deg);
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent var(--primary) transparent transparent;
+}
+
+.navbar-item:hover .tooltip {
+  display: block;
+}
+
+/* Rest of the CSS */
 .navbar {
   display: flex;
   flex-direction: column;
@@ -6,9 +43,9 @@
   width: 60px; 
   height: fit-content;
   border-radius: 0 20px 20px 0;
-  
   margin: auto;
   position: fixed;
+  z-index: 10;
   right: 2%; 
   top: 50%; 
   transform: translate(-50%, -50%); 
@@ -25,7 +62,6 @@
   border-radius: 50%; 
 }
 
-
 .navbar-content {
   display: flex;
   flex-direction: column;
@@ -34,19 +70,19 @@
   width: 100%;
 }
 
-
 .navbar-item {
   position: relative;
   margin: 10px 0;
   display: flex;
   align-items: center;
 }
-.navbar-item .nav-icon{
+
+.navbar-item .nav-icon {
   color: #656464;
   font-size: 18px;
 }
 
-.navbar-item .nav-icon:hover{
+.navbar-item .nav-icon:hover {
   color: var(--primary);
 }
 
@@ -54,26 +90,6 @@
   color: var(--primary); 
   transform: scale(1.2);
 }
-
-.navbar-item .tooltip {
-  display: none;
-  margin-left: 10px;
-  font-size: 14px;
-  color: var(--primary);
-  position: absolute;
-  right: 20px;
-  top: -20px;
-  background-color: #fff;
-  padding: 12px 16px;
-  border-radius: 10px;
-  z-index: 5;
-}
-
-
-.navbar-item:hover .tooltip {
-  display: block;
-}
-
 
 .navbar-socials {
   position: relative;
@@ -111,21 +127,18 @@
 }
 
 .navbar-socials .shared a:hover {
-  color: #343434;
+  color: var(--primary);
 }
 
-
-.social-icon{
+.social-icon {
   padding: 10px;
   font-size: 18px;
   border: 1px solid rgb(213, 220, 226);
   border-radius: 50%;
 }
 
-
-
 @media (max-width: 1400px) {
-  .navbar{
+  .navbar {
     display: none;
   }
 }

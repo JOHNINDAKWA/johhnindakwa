@@ -1,19 +1,22 @@
+import React, { useContext } from "react";
 import { FaHome } from "react-icons/fa";
-import Slider from 'react-slick';
-import './Home.css';
+import Slider from "react-slick";
+import "./Home.css";
 import { IoCheckmarkDone } from "react-icons/io5";
 import Logo1 from "../../images/logo1.png";
 import Logo2 from "../../images/logo2.png";
 import Logo3 from "../../images/logo3.png";
 import Logo4 from "../../images/logo4.png";
 import Logo5 from "../../images/logo5.png";
-import John from '../../images/logo.png'
 
 // Import slick carousel CSS
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import { ThemeContext } from "../../ThemeContext";
 
 const Home = () => {
+  const { currentImage } = useContext(ThemeContext);
+
   const settings = {
     infinite: true,
     speed: 500,
@@ -23,7 +26,7 @@ const Home = () => {
     autoplaySpeed: 2000,
     arrows: false,
     dots: false,
-    cssEase: 'linear', 
+    cssEase: "linear",
     pauseOnHover: false,
     centerMode: false,
     focusOnSelect: false,
@@ -59,7 +62,7 @@ const Home = () => {
       },
     ],
   };
-  
+
   return (
     <section className="home" id="home">
       <div className="header">
@@ -70,11 +73,11 @@ const Home = () => {
       <div className="home-mid">
         <div className="mid-left">
           <h2>
-          Shaping The <br /> <span>Future of Digital Solutions</span>
+            Shaping The <br /> <span>Future of Digital Solutions</span>
           </h2>
           <p>
-          As a dedicated Frontend Developer, I build features tailored
-           to deliver exceptional user experiences.
+            As a dedicated Frontend Developer, I build features tailored to
+            deliver exceptional user experiences.
           </p>
 
           <div className="flex-items">
@@ -99,10 +102,7 @@ const Home = () => {
         </div>
 
         <div className="mid-right">
-          <img
-            src={John}
-            alt=""
-          />
+          <img src={currentImage} alt="" />
         </div>
       </div>
 

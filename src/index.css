@@ -21,8 +21,6 @@ body {
 }
 
 
-
-
 html{
     scroll-behavior: smooth;
   }
@@ -41,3 +39,9 @@ html{
   ul{
     list-style: none;
   }
+
+  ::selection {
+    background: var(--primary);
+    color: #fff;
+  }
+  
