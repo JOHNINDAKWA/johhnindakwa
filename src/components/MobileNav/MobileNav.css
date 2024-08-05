@@ -1,0 +1,160 @@
+.mobile-navbar {
+    position: relative;
+    width: 100%;
+}
+
+.mobile-nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: transparent; 
+}
+
+.mobile-navbar-img {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.mobile-navbar-img .thunder {
+    font-size: 20px;
+    color: var(--primary);
+    padding: 5px;
+    border: 1px solid rgb(213, 220, 226);
+    border-radius: 50%; 
+    margin-right: 0.5rem;
+  }
+
+.navbar-img h3 {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.mobile-nav-toggle {
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: black; 
+}
+
+
+.close-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 2.5rem;
+    color: black; 
+}
+
+
+.mobile-navbar-content {
+    display: none; 
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 13rem;
+    max-width: 100%;
+    height: 100vh;    
+    padding: 15px;
+    background-color: white;
+    color: black;
+    transform: translateX(100%); 
+    transition: transform 0.3s ease-in-out;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    z-index: 999; 
+}
+
+.mobile-navbar-content.open {
+    display: block;
+    transform: translateX(0);
+}
+
+
+.mobile-navbar-items {
+    display: flex;
+    flex-direction: column;
+    padding: 1.8rem 1.2rem; 
+    padding-top: 3rem;
+}
+
+.mobile-navbar-item {
+    margin: 1rem 0;
+}
+
+.mobile-navbar-item a {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.mobile-navbar-item p {
+    color: rgba(0, 0, 0, 0.577);
+    margin: 0;
+    padding: 0;
+}
+
+
+.mobile-navbar-item a.active,
+.mobile-navbar-item a:hover {
+    color: var(--primary); 
+}
+
+.mobile-navbar-item p.active,
+.mobile-navbar-item p:hover {
+    color: var(--primary); 
+}
+
+.mobile-nav-icon {
+    margin-right: 0.5rem;
+}
+
+
+.mobile-navbar-socials {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+}
+
+.mobile-navbar-socials a {
+    color: black;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+.mobile-navbar-socials a:hover {
+    color: var(--primary);
+}
+
+
+@media (max-width: 1200px) {
+    .mobile-nav-top {
+        display: flex;
+    }
+}
+
+@media (min-width: 1400px) {
+    .mobile-navbar {
+        display: none;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .mobile-nav-top {
+        display: flex;
+    }
+}
+
+
+@media (max-width: 576px) {
+    .mobile-nav-top {
+        display: flex;
+    }
+}

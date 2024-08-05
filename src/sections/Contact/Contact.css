@@ -1,0 +1,395 @@
+/* Overall Section Styling */
+.contact {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;  
+    margin-top: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
+
+  
+  /* Header Styling */
+  .contact-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: 1px solid var(--border);
+    width: fit-content;
+    border-radius: 35px;
+    
+  }
+  
+
+  .contact-header p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+  }
+
+  
+  .contact-header .nav-icon {
+    font-size: 15px;
+    color: #333;
+  }
+  
+
+  /* Description Section Styling */
+  .contact-desc {
+    margin-bottom: 30px;
+  }
+  
+  .contact-desc h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .contact-desc p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    padding-right: 100px;
+  }
+  
+  .contact-desc span {
+    color: var(--primary); 
+    font-weight: bold;
+  }
+
+
+  
+/* Mapbox Styling */
+.mapbox {
+    margin: 30px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .mapbox iframe {
+    border: none;
+    border-radius: 8px;
+    transition: filter 0.3s ease;
+    
+    width: 800px;
+    height: 400px;
+  }
+  
+  .mapbox iframe:hover {
+    filter: none;
+  }
+  
+  /* Contact Form Styling */
+  .contact-form {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  .contact-form .form-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .contact-form .form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .contact-form .input-wrapper {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .contact-form .form-input {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s ease;
+  }
+  
+  .contact-form .form-input:focus {
+    border-color: var(--primary);
+    outline: none;
+  }
+  
+  .contact-form textarea.form-input {
+    height: 150px;
+    resize: vertical;
+  }
+  
+  .contact-form .form-btn {
+    background-color: var(--primary);
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-form .form-btn:hover {
+    background-color: #fff;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+    transform: scale(1.05);
+  }
+  
+  .contact-form .form-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+/* Responsive Styles for the Contact Section */
+
+/* For screens 1400px and wider */
+@media (max-width: 1400px) {
+  .contact {
+    padding: 35px;
+  }
+
+  .contact-desc h2 {
+    font-size: 26px;
+  }
+
+  .contact-desc p {
+    font-size: 15px;
+  }
+
+  .contact-form .form-title {
+    font-size: 22px;
+  }
+
+  .contact-form .form-input {
+    padding: 13px;
+  }
+
+  .contact-form .form-btn {
+    padding: 13px;
+    font-size: 15px;
+  }
+}
+
+/* For screens 1200px and wider */
+@media (max-width: 1200px) {
+  .contact {
+    padding: 30px;
+  }
+
+  .contact-desc h2 {
+    font-size: 24px;
+  }
+
+  .contact-desc p {
+    font-size: 14px;
+    padding-right: 80px;
+  }
+
+  .contact-form .form-title {
+    font-size: 20px;
+  }
+
+  .contact-form .form-input {
+    padding: 12px;
+  }
+
+  .contact-form .form-btn {
+    padding: 12px;
+    font-size: 14px;
+  }
+
+  .mapbox iframe {
+    width: 100%;
+    max-width: 720px;
+  }
+}
+
+/* For screens 992px and wider */
+@media (max-width: 992px) {
+  .contact {
+    padding: 25px;
+  }
+
+  .contact-header p {
+    font-size: 10px;
+  }
+
+  .contact-desc h2 {
+    font-size: 22px;
+  }
+
+  .contact-desc p {
+    font-size: 13px;
+    padding-right: 60px;
+  }
+
+  .contact-form .form-title {
+    font-size: 18px;
+  }
+
+  .contact-form .form-input {
+    padding: 11px;
+  }
+
+  .contact-form .form-btn {
+    padding: 11px;
+    font-size: 13px;
+  }
+
+  .mapbox iframe {
+    width: 100%;
+    height: 430px;
+  }
+}
+
+/* For screens 768px and wider */
+@media (max-width: 768px) {
+  .contact {
+    padding: 20px;
+  }
+
+  .contact-desc h2 {
+    font-size: 20px;
+  }
+
+  .contact-desc p {
+    font-size: 12px;
+    padding-right: 40px;
+  }
+
+  .contact-form .form-title {
+    font-size: 16px;
+  }
+
+  .contact-form .form-input {
+    padding: 10px;
+  }
+
+  .contact-form .form-btn {
+    padding: 10px;
+    font-size: 12px;
+  }
+
+  .mapbox iframe {
+    width: 100%;
+    height: 380px;
+  }
+}
+
+/* For screens 576px and wider */
+@media (max-width: 576px) {
+  .contact {
+    padding: 15px;
+  }
+
+  .contact-desc h2 {
+    font-size: 18px;
+  }
+
+  .contact-desc p {
+    font-size: 11px;
+    padding-right: 20px;
+  }
+
+  .contact-form .form-title {
+    font-size: 14px;
+  }
+
+  .contact-form .form-input {
+    padding: 9px;
+  }
+
+  .contact-form .form-btn {
+    padding: 9px;
+    font-size: 11px;
+  }
+
+  .mapbox iframe {
+    width: 100%;
+    height: 320px;
+  }
+}
+
+/* For screens 480px and wider */
+@media (max-width: 480px) {
+  .contact {
+    padding: 10px;
+  }
+
+  .contact-desc h2 {
+    font-size: 16px;
+  }
+
+  .contact-desc p {
+    font-size: 10px;
+    padding-right: 10px;
+  }
+
+  .contact-form .form-title {
+    font-size: 12px;
+  }
+
+  .contact-form .form-input {
+    padding: 8px;
+  }
+
+  .contact-form .form-btn {
+    padding: 8px;
+    font-size: 10px;
+  }
+
+  .mapbox iframe {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+  }
+}
+
+/* For screens 360px and wider */
+@media (max-width: 360px) {
+  .contact {
+    padding: 5px;
+  }
+
+  .contact-desc h2 {
+    font-size: 14px;
+  }
+
+  .contact-desc p {
+    font-size: 9px;
+    padding-right: 5px;
+  }
+
+  .contact-form .form-title {
+    font-size: 10px;
+  }
+
+  .contact-form .form-input {
+    padding: 7px;
+  }
+
+  .contact-form .form-btn {
+    padding: 7px;
+    font-size: 9px;
+  }
+
+  .mapbox iframe {
+    width: 100%;
+    height: 200px;
+  }
+}

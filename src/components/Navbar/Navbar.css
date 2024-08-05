@@ -1,0 +1,130 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+  width: 60px; 
+  height: fit-content;
+  border-radius: 0 20px 20px 0;
+  
+  margin: auto;
+  position: fixed;
+  right: 2%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
+  padding: 1rem;
+  border-radius: 45px;
+  border: 1px solid rgb(213, 220, 226);
+}
+
+.navbar-img .thunder {
+  font-size: 20px;
+  color: var(--primary);
+  padding: 5px;
+  border: 1px solid rgb(213, 220, 226);
+  border-radius: 50%; 
+}
+
+
+.navbar-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  width: 100%;
+}
+
+
+.navbar-item {
+  position: relative;
+  margin: 10px 0;
+  display: flex;
+  align-items: center;
+}
+.navbar-item .nav-icon{
+  color: #656464;
+  font-size: 18px;
+}
+
+.navbar-item .nav-icon:hover{
+  color: var(--primary);
+}
+
+.navbar-item a.active .nav-icon {
+  color: var(--primary); 
+  transform: scale(1.2);
+}
+
+.navbar-item .tooltip {
+  display: none;
+  margin-left: 10px;
+  font-size: 14px;
+  color: var(--primary);
+  position: absolute;
+  right: 20px;
+  top: -20px;
+  background-color: #fff;
+  padding: 12px 16px;
+  border-radius: 10px;
+}
+
+
+.navbar-item:hover .tooltip {
+  display: block;
+}
+
+
+.navbar-socials {
+  position: relative;
+  margin-top: auto;
+  padding: 20px;
+}
+
+.navbar-socials a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.navbar-socials .shared {
+  display: none;
+  position: absolute;
+  right: 60px;
+  top: 15px;
+  background-color: #fff;
+  border: 1px solid rgb(213, 220, 226);
+  padding: 10px;
+  border-radius: 30px;
+}
+
+.navbar-socials:hover .shared {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar-socials .shared a {
+  color: #656464;
+  font-size: 18px;
+}
+
+.navbar-socials .shared a:hover {
+  color: #343434;
+}
+
+
+.social-icon{
+  padding: 10px;
+  font-size: 18px;
+  border: 1px solid rgb(213, 220, 226);
+  border-radius: 50%;
+}
+
+
+
+@media (max-width: 1400px) {
+  .navbar{
+    display: none;
+  }
+}

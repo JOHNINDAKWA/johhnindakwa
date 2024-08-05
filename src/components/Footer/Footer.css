@@ -1,0 +1,104 @@
+.footer {
+  color: #333; 
+  text-align: center;
+  position: relative;
+  bottom: 0;
+  padding: 20px; 
+  background: transparent;
+  margin-top: 2rem;
+}
+
+.footer-links {
+  margin-bottom: 10px;
+}
+
+.footer-link {
+  color: var(--primary);
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 0.9rem;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-copy {
+  font-size: 0.8rem;
+}
+
+
+
+.whatsapp-button {
+  position: fixed;
+  z-index: 100;
+  bottom: 80px;
+  right: 20px;
+  background: #25D366; 
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); 
+}
+
+.back-to-top {
+  position: fixed;
+  z-index: 100;
+  bottom: 20px;
+  right: 20px;
+  background: linear-gradient(45deg, #111418, var(--primary));
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.6s, transform 0.5s;
+}
+
+.back-to-top:hover {
+  transform: rotate(1080deg);
+  background: linear-gradient(45deg, var(--primary), #111418);
+}
+
+.back-to-top:focus {
+  outline: none;
+}
+
+
+.back-to-top .icon{
+  font-size: 22px;
+  transform: rotate(90deg);
+  animation: bounce 2s infinite;
+}
+
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-2px);
+  }
+  60% {
+    transform: translateY(-4px);
+  }
+}
+

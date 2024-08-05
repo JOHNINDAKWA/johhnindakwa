@@ -1,0 +1,283 @@
+/* Overall Section Styling */
+.experience {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 8px;  
+    margin-top: 3rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: fit-content;
+  }
+
+  
+  /* Header Styling */
+  .experience-header {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 20px;
+    padding: 0 10px;
+    border: 1px solid var(--border);
+    width: fit-content;
+    border-radius: 35px;
+    
+  }
+  
+
+  .experience-header p {
+    font-size: 12px;
+    font-weight: 400;
+    color: #333;
+  }
+
+  
+  .experience-header .nav-icon {
+    font-size: 15px;
+    color: #333;
+  }
+  
+
+  /* Description Section Styling */
+  .experience-desc {
+    margin-bottom: 30px;
+  }
+  
+  .experience-desc h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .experience-desc p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    padding-right: 100px;
+  }
+  
+  .experience-desc span {
+    color: var(--primary); 
+    font-weight: bold;
+  }
+
+
+  
+  .timeline {
+    margin-bottom: 30px;
+    color: black;
+  }
+  
+
+  .timeline-divider{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+  }
+
+  
+  .timeline-list {
+    font-size: 14px;
+    margin-left: 45px;
+  }
+  
+  .timeline-item {
+    position: relative;
+  }
+  
+  .timeline-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  
+  .timeline-item-title {
+    font-size: 1rem;
+    line-height: 1.3;
+    margin-bottom: 7px;
+  }
+  
+  .timeline-list span {
+    color: var(--primary);
+    font-weight: 400;
+    line-height: 1.6;
+  }
+  
+  .timeline-item:not(:last-child)::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    left: -30px;
+    width: 1px;
+    height: calc(100% + 50px);
+    background: var(--primary);
+  }
+  
+  .timeline-item::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -33px;
+    height: 6px;
+    width: 6px;
+    background: var(--primary);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px hsl(105, 11%, 22%);
+  }
+  
+  .timeline-text {
+    color: #111418;
+    font-weight: 300;
+    line-height: 1.6;
+  }
+  
+  .timeline-item {
+    opacity: 1;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+  }
+
+/* Media Queries */
+
+/* For screens less than or equal to 1400px */
+@media (max-width: 1400px) {
+  .experience {
+    padding: 35px;
+  }
+
+  .experience-desc h2 {
+    font-size: 26px;
+  }
+
+  .experience-desc p {
+    font-size: 15px;
+    padding-right: 80px;
+  }
+
+  .timeline-item-title {
+    font-size: 0.95rem;
+  }
+
+  .timeline-list {
+    margin-left: 40px;
+  }
+}
+
+/* For screens less than or equal to 1200px */
+@media (max-width: 1200px) {
+  .experience {
+    padding: 30px;
+  }
+
+  .experience-desc h2 {
+    font-size: 24px;
+  }
+
+  .experience-desc p {
+    font-size: 14px;
+    padding-right: 60px;
+  }
+
+  .timeline-list {
+    margin-left: 35px;
+  }
+
+  .timeline-divider {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+/* For screens less than or equal to 992px */
+@media (max-width: 992px) {
+  .experience {
+    padding: 25px;
+  }
+
+  .experience-header p {
+    font-size: 11px;
+  }
+
+  .experience-desc h2 {
+    font-size: 22px;
+  }
+
+  .experience-desc p {
+    font-size: 13px;
+    padding-right: 40px;
+  }
+
+  .timeline-list {
+    margin-left: 30px;
+  }
+}
+
+/* For screens less than or equal to 768px */
+@media (max-width: 768px) {
+  .experience {
+    padding: 20px;
+  }
+
+  .experience-header p {
+    font-size: 10px;
+  }
+
+  .experience-desc h2 {
+    font-size: 20px;
+  }
+
+  .experience-desc p {
+    font-size: 12px;
+    padding-right: 20px;
+  }
+
+  .timeline-list {
+    margin-left: 25px;
+  }
+}
+
+/* For screens less than or equal to 576px */
+@media (max-width: 576px) {
+  .experience {
+    padding: 15px;
+  }
+
+  .experience-header p {
+    font-size: 9px;
+  }
+
+  .experience-desc h2 {
+    font-size: 18px;
+  }
+
+  .experience-desc p {
+    font-size: 11px;
+    padding-right: 10px;
+  }
+
+  .timeline-list {
+    margin-left: 20px;
+  }
+}
+
+/* For screens less than or equal to 480px */
+@media (max-width: 480px) {
+  .experience {
+    padding: 10px;
+  }
+
+  .experience-header p {
+    font-size: 8px;
+  }
+
+  .experience-desc h2 {
+    font-size: 16px;
+  }
+
+  .experience-desc p {
+    font-size: 10px;
+    padding-right: 5px;
+  }
+
+  .timeline-list {
+    margin-left: 15px;
+  }
+}
