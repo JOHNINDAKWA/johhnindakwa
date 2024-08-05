@@ -1,14 +1,14 @@
 import "./Testimonial.css";
-import { PiGraduationCapLight } from "react-icons/pi";
 import { IoMdStar } from "react-icons/io";
 import biko from "../../images/biko.jpg"
 import emily from "../../images/emily.png"
+import { FaCommentsDollar } from "react-icons/fa";
 
 const Testimonial = () => {
   return (
     <section className="testimonial" id="testimonial">
       <div className="testimonial-header">
-        <PiGraduationCapLight className="nav-icon" />
+      <FaCommentsDollar className="nav-icon" />
         <p>Affirmation</p>
       </div>
       <div className="testimonial-desc">

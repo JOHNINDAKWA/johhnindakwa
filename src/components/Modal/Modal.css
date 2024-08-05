@@ -54,10 +54,12 @@
 }
 
 .modal-content p {
-  font-size: 1rem;
+  font-size: 0.8rem;
   color: #555;
   margin-bottom: 20px;
   line-height: 1.5;
+  font-style: italic;
+
 }
 
 .modal-content a {
@@ -149,16 +151,16 @@
   }
 
   .modal-content h2 {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
   }
 
   .modal-content h3 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .modal-content p,
   .modal-content a {
-    font-size: 0.9rem;
+    font-size: 0.7rem;
   }
 }
 
@@ -170,16 +172,16 @@
   }
 
   .modal-content h2 {
-    font-size: 1.1rem;
+    font-size: 0.9rem;
   }
 
   .modal-content h3 {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 
   .modal-content p,
   .modal-content a {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 
   .modal-close {

@@ -95,6 +95,9 @@
 
 .about-details ul li b {
   margin-left: 1rem;
+  font-weight: 400;
+  font-style: italic;
+  font-size: smaller;
 }
 
 .about-details b {

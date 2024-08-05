@@ -1,3 +1,4 @@
+import { FaSchoolFlag } from "react-icons/fa6";
 import "./Experience.css";
 import { IoBriefcaseOutline } from "react-icons/io5";
 
@@ -67,7 +68,7 @@ const Experience = () => {
       </div>
 
       <div className="experience-header">
-        <IoBriefcaseOutline className="nav-icon" />
+      <FaSchoolFlag className="nav-icon"/>
         <p>PHRONTISTERY</p>
       </div>
 

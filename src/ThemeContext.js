@@ -16,8 +16,10 @@ export const ThemeProvider = ({ children }) => {
   useEffect(() => {
     // Update the CSS variable
     document.documentElement.style.setProperty('--primary', themeColor);
-    // Save to local storage
+
+    // Save to local storage    
     localStorage.setItem('themeColor', themeColor);
+    
     // Update image based on theme color
     setCurrentImage(getImageForColor(themeColor));
   }, [themeColor]);
@@ -25,7 +27,7 @@ export const ThemeProvider = ({ children }) => {
   function getInitialThemeColor() {
     // Check local storage for saved theme color
     const savedThemeColor = localStorage.getItem('themeColor');
-    return savedThemeColor ? savedThemeColor : '#e78211'; // Default color
+    return savedThemeColor ? savedThemeColor : '#e78211';
   }
 
   function getImageForColor(color) {

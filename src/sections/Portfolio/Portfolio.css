@@ -104,12 +104,13 @@
 
 .portfolio-item h3 {
   font-weight: 400;
-  font-size: 20px;
+  font-size: 15px;
 }
 
 .portfolio-item p {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   font-weight: 500;
+  font-style: italic;
   opacity: 0.7;
   white-space: nowrap;
   overflow: hidden;
@@ -132,6 +133,26 @@
   transform: scale(1.05);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+.view-more-button {
+  display: block;
+  margin: 20px auto;
+  padding: 12px 24px;
+  background-color: transparent;
+  color: var(--primary);
+  border: 2px solid var(--primary);
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-more-button:hover {
+  background-color: var(--primary);
+  color: white;
+}
+
+
 
 
 /* Media Queries */

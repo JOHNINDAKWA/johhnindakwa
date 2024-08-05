@@ -3,7 +3,6 @@ import "./Sidebar.css";
 import John from "../../images/john.png";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 
-
 const Sidebar = () => {
   const [currentText, setCurrentText] = useState("");
   const [currentTextIndex, setCurrentTextIndex] = useState(0);
@@ -58,9 +57,14 @@ const Sidebar = () => {
             <span>Nairobi</span>
           </li>
           <li>
-            <p>Age:</p>
-            <span>24</span>
+            <p>Marital Status:</p>
+            <span>Bachelor</span>
           </li>
+          <li>
+            <p>Nationality:</p>
+            <span>Kenyan</span>
+          </li>
+
         </ul>
       </div>
 

@@ -1,11 +1,11 @@
-import { PiGraduationCapLight } from "react-icons/pi";
 import "./Contact.css";
+import { SiMinutemailer } from "react-icons/si";
 
 const Contact = () => {
   return (
     <section className="contact" id="contact">
       <div className="contact-header">
-        <PiGraduationCapLight className="nav-icon" />
+      <SiMinutemailer className="nav-icon"/>
         <p>Contact</p>
       </div>
 
