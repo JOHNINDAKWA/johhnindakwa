@@ -1,6 +1,6 @@
 /* Overall Section Styling */
 .testimonial {
-  background-color: #fff;
+  background-color: var(--bg-section);
   padding: 40px;
   border-radius: 8px;
   margin-top: 3rem;
@@ -23,12 +23,12 @@
 .testimonial-header p {
   font-size: 12px;
   font-weight: 400;
-  color: #333;
+  color:  var(--dark);
 }
 
 .testimonial-header .nav-icon {
   font-size: 15px;
-  color: #333;
+  color:  var(--dark);
 }
 
 /* Description Section Styling */
@@ -39,13 +39,13 @@
 .testimonial-desc h2 {
   font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color:  var(--dark);
   margin-bottom: 10px;
 }
 
 .testimonial-desc p {
   font-size: 16px;
-  color: #666;
+  color:  var(--dark);
   line-height: 1.6;
   padding-right: 100px;
 }
@@ -101,7 +101,7 @@
   line-height: 2em;
   padding: 0 50px;
   opacity: 0.8;
-  color: rgba(26, 26, 26, 0.9);
+  color: var(--light);
 }
 
 .testimony-name {
@@ -115,7 +115,7 @@
   font-family: Georgia, "Times New Roman", serif;
   letter-spacing: 0px;
   line-height: 1.65em;
-  color: rgba(26, 26, 26, 0.9);
+  color: var(--dark);
   margin-top: -12px;
 }
 

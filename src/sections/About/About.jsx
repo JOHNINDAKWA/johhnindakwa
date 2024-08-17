@@ -17,12 +17,8 @@ const About = () => {
           Hello, I'm <span>John Kulundu</span>, a dedicated IT professional with
           a robust foundation in operating systems, networking, and software
           engineering. Over the past decade, I've immersed myself in both
-          front-end and back-end development, leveraging the MERN stack and PHP
-          to build versatile solutions. My passion lies in crafting intuitive,
-          user-friendly interfaces, ensuring that each project not only meets
-          but exceeds user expectations. My journey has been driven by a
-          commitment to creating seamless and engaging digital experiences
-          across various platforms.
+          front-end and back-end development, leveraging the MERN stack, Next Js, Vue Js and Laravel
+          to build versatile solutions. 
         </p>
       </div>
 

@@ -32,7 +32,7 @@ const Modal = ({ isOpen, onClose, item }) => {
               <p>
                 <strong>Project Link:</strong>{" "}
                 <a
-                  href={item.projectLink}
+                  href={item.link}
                   target="_blank"
                   rel="noopener noreferrer"
                 >

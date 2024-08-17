@@ -1,6 +1,6 @@
 /* Overall Section Styling */
 .skills {
-    background-color: #fff;
+    background-color: var(--bg-section);
     padding: 40px;
     border-radius: 8px;  
     margin-top: 3rem;
@@ -26,13 +26,13 @@
   .skills-header p {
     font-size: 12px;
     font-weight: 400;
-    color: #333;
+    color: var(--dark);
   }
 
   
   .skills-header .nav-icon {
     font-size: 15px;
-    color: #333;
+    color: var(--dark);
   }
   
 
@@ -44,13 +44,13 @@
   .skills-desc h2 {
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color: var(--dark);
     margin-bottom: 10px;
   }
   
   .skills-desc p {
     font-size: 16px;
-    color: #666;
+    color:  var(--light);
     line-height: 1.6;
     padding-right: 100px;
   }
@@ -89,13 +89,13 @@
   
   .skill-item h3 {
     font-size: 1.4rem;
-    color: #333;
+    color: var(--dark);
     margin: 10px 0;
   }
   
   .skill-item p {
     font-size: 13px;
-    color: #666;
+    color:  var(--light);
     margin-right: -4rem;
   }
   
@@ -105,7 +105,7 @@
   }
   
   .slick-dots li button:before {
-    color: #333;
+    color: var(--dark);
   }
   
   .slick-dots li.slick-active button:before {

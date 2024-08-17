@@ -1,6 +1,6 @@
 /* Overall Section Styling */
 .services {
-  background-color: #fff;
+  background-color: var(--bg-section);
   padding: 40px;
   border-radius: 8px;  
   margin-top: 3rem;
@@ -23,13 +23,15 @@
 .services-header p {
   font-size: 12px;
   font-weight: 400;
-  color: #333;
+  color:  var(--dark);
 }
 
 .services-header .nav-icon {
   font-size: 15px;
-  color: #333;
+  color:  var(--dark);
 }
+
+
 
 /* Description Section Styling */
 .services-desc {
@@ -39,13 +41,13 @@
 .services-desc h2 {
   font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color:  var(--dark);
   margin-bottom: 10px;
 }
 
 .services-desc p {
   font-size: 16px;
-  color: #666;
+  color: var(--light);
   line-height: 1.6;
   padding-right: 100px;
 }
@@ -55,75 +57,80 @@
   font-weight: bold;
 }
 
-/* Service Items Styling - Diagonal Layout */
+
 .service-items {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  gap: 30px;
-  transform: rotate(-5deg);
-  margin-top: 50px;
-  padding-bottom: 1rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
 }
 
 .service-item {
-  background: #fff;
-  padding: 30px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  flex: 1 1 250px;
-  max-width: 300px;
+  background-color: var(--bg-section);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px var(--skill-border);
+  padding: 20px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  transform: rotate(5deg);
+  cursor: pointer;
 }
 
 .service-item:hover {
-  transform: rotate(5deg) translateY(-10px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
-}
-
-.service-item::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 120%;
-  height: 120%;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0) 0%, rgba(128, 128, 128, 0.3) 60%);
-  transition: transform 0.3s ease;
-  transform: translate(-50%, -50%) scale(0);
-}
-
-.service-item:hover::before {
-  transform: translate(-50%, -50%) scale(1);
-}
-
-.service-item h3 {
-  color: #333;
-  margin: 10px 0 10px;
-  font-size: 1.2rem;
-  line-height: 2rem;
-  font-weight: 500;
-}
-
-.service-item p {
-  font-size: 13px;
-  color: #666;
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
 }
 
 .service-icon {
   font-size: 40px;
   color: var(--primary);
-  margin-bottom: 12px;
-  transition: transform 0.5s ease;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.service-item h3 {
+  font-size: 22px;
+  color:  var(--dark);
+  margin-bottom: 10px;
+  transition: color 0.3s ease;
+}
+
+.service-item p {
+  font-size: 16px;
+  color: var(--light);
+  line-height: 1.5;
 }
 
 .service-item:hover .service-icon {
-  transform: rotate(360deg);
+  color: var(--light);
 }
+
+.service-item:hover h3 {
+  color: var(--primary);
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+  .service-items {
+    grid-template-columns: 1fr;
+  }
+
+  .service-item {
+    padding: 15px;
+  }
+
+  .service-icon {
+    font-size: 35px;
+  }
+
+  .service-item h3 {
+    font-size: 20px;
+  }
+
+  .service-item p {
+    font-size: 14px;
+  }
+}
+
 
 /* Header Styling */
 .skills-header {
@@ -141,12 +148,12 @@
 .skills-header p {
   font-size: 12px;
   font-weight: 400;
-  color: #333;
+  color:  var(--dark);
 }
 
 .skills-header .nav-icon {
   font-size: 15px;
-  color: #333;
+  color:  var(--dark);
 }
 
 /* Description Section Styling */
@@ -157,13 +164,13 @@
 .skills-desc h2 {
   font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color:  var(--dark);
   margin-bottom: 10px;
 }
 
 .skills-desc p {
   font-size: 16px;
-  color: #666;
+  color: var(--light);
   line-height: 1.6;
   padding-right: 100px;
 }
@@ -173,72 +180,46 @@
   font-weight: bold;
 }
 
-/* Carousel Container Styling */
+
 .skills-carousel {
+  padding: 40px 0;
   position: relative;
-  overflow: hidden; /* Ensure items do not overflow outside the container */
-}
-/* Skill Item Styling */
-.skill-item {
-  background: #f8f9fa;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-  margin: 0 15px;
 }
 
-.skill-item:hover {
-  transform: scale(1);
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+.skill-item {
+  display: inline-block;
+  padding: 25px 30px;
+  text-align: center;
+  border: 1px solid var(--skill-border);
+  margin: 15px 5px;
+  width: 100px;
 }
 
 .skill-item img {
-  width: 60px; 
-  height: auto;
-  margin-bottom: 15px;
+  width: 40px;
+  height: 40px;
+  margin-bottom: 10px;
 }
 
 .skill-item h3 {
-  font-size: 1.6rem;
-  color: #444;
-  margin: 15px 0;
+  margin: 0;
+  font-size: 20px;
+  color:  var(--dark);
+  padding: 5px;
+  margin-bottom: 10px;
+
 }
 
 .skill-item p {
-  font-size: 14px;
-  color: #777;
+  margin: 0;
+  font-size: 16px;
+  color: var(--light);
 }
 
 
-/* Slick Carousel Dots Styling */
-.slick-dots {
-  bottom: -30px;
-}
-
-.slick-dots li button:before {
-  color: #333;
-}
-
-.slick-dots li.slick-active button:before {
-  color: var(--primary);
-}
 
 @media (max-width: 1200px) {
-  .service-items {
-      justify-content: space-between;
-      gap: 20px;
-      transform: rotate(0deg); /* Remove rotation */
-  }
 
-  .service-item {
-      flex: 1 1 220px;
-      max-width: 280px;
-  }
 }
 
 @media (max-width: 992px) {
@@ -247,15 +228,7 @@
       padding-right: 50px;
   }
 
-  .service-items {
-      justify-content: center;
-      transform: rotate(0deg); /* Remove rotation */
-  }
 
-  .service-item {
-      flex: 1 1 200px;
-      max-width: 250px;
-  }
 }
 
 @media (max-width: 768px) {
@@ -276,35 +249,7 @@
       padding-right: 30px;
   }
 
-  .service-items {
-      gap: 15px;
-      transform: rotate(0deg); /* Remove rotation */
-  }
 
-  .service-item {
-      flex: 1 1 180px;
-      max-width: 200px;
-      padding: 20px;
-      transform: rotate(0deg); /* Remove rotation */
-
-  }
-
-  .skills-carousel .skill-item {
-      padding: 10px;
-      transform: scale(0.85);
-  }
-
-  .skills-carousel .skill-item img {
-      width: 40px;
-  }
-
-  .skills-carousel .skill-item h3 {
-      font-size: 1.2rem;
-  }
-
-  .skills-carousel .skill-item p {
-      font-size: 12px;
-  }
 }
 
 @media (max-width: 576px) {
@@ -317,33 +262,4 @@
       padding-right: 20px;
   }
 
-  .service-items {
-      gap: 10px;
-      flex-direction: column;
-      align-items: center;
-      transform: rotate(0deg); /* Remove rotation */
-  }
-
-  .service-item {
-      flex: 1 1 70%;
-      max-width: 80%;
-      padding: 15px;
-      transform: rotate(0deg); /* Remove rotation */
-
-  }
-
-  .skills-carousel .skill-item {
-      margin: 0 5px;
-      padding: 8px;
-      transform: scale(0.8);
-  }
-
-  .skills-carousel .skill-item h3 {
-      font-size: 1rem;
-  }
-
-  .skills-carousel .skill-item p {
-      font-size: 10px;
-      margin-right: -2rem;
-  }
 }

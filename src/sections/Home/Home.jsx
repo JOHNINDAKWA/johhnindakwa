@@ -92,10 +92,10 @@ const Home = () => {
           </div>
 
           <div className="buttons-flex">
-            <a href="/" className="btn-hire">
+            <a href="#contact" className="btn-hire">
               Hire Me
             </a>
-            <a href="/" className="btn-work">
+            <a href="#portfolio" className="btn-work">
               My Works
             </a>
           </div>

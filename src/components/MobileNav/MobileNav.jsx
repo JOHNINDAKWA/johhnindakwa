@@ -17,8 +17,8 @@ import {
 import { GrProjects } from "react-icons/gr";
 import { TfiCommentsSmiley } from "react-icons/tfi";
 import { MdAttachEmail } from "react-icons/md";
-import { IoIosCloseCircle } from "react-icons/io";
 import { CiMenuFries } from "react-icons/ci";
+import { RxCross2 } from "react-icons/rx";
 import { GiThunderball } from "react-icons/gi";
 
 
@@ -89,7 +89,7 @@ const MobileNav = () => {
       <div className={`mobile-navbar-content ${isNavOpen ? "open" : "closed"}`}>
         {isNavOpen && (
           <div className="close-toggle" onClick={handleNavToggle}>
-            <IoIosCloseCircle />
+            <RxCross2 />
           </div>
         )}
         <div className="mobile-navbar-items">

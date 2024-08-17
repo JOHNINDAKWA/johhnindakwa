@@ -1,5 +1,5 @@
 .footer {
-  color: #333; 
+  color: var(--light); 
   text-align: center;
   position: relative;
   bottom: 0;
@@ -84,29 +84,7 @@
   cursor: pointer;
 }
 
-.whatsapp-button {
-  position: fixed;
-  z-index: 100;
-  bottom: 80px;
-  right: 20px;
-  background: #25D366; 
-  color: #fff;
-  border: none;
-  border-radius: 50%;
-  font-size: 24px;
-  width: 40px;
-  height: 40px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  cursor: pointer;
-  transition: background 0.3s, transform 0.3s;
-}
 
-.whatsapp-button:hover {
-  transform: scale(1.1); 
-}
 
 .back-to-top {
   position: fixed;
@@ -152,5 +130,78 @@
   }
   60% {
     transform: translateY(-4px);
+  }
+}
+
+
+.whatsapp-button {
+  position: fixed;
+  z-index: 100;
+  bottom: 80px;
+  right: 20px;
+  background: #25D366; 
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.whatsapp-button:hover {
+  transform: scale(1.1); 
+}
+
+
+/* Footer.css */
+
+.theme-changer {
+
+  position: fixed;
+  z-index: 100;
+  bottom: 80px;
+  right: 20px;
+  background: transparent; 
+  color:  #000;
+  border-radius: 50%;
+  border: none;
+  font-size: 34px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.theme-changer:hover {
+  color: var(--primary); 
+}
+
+
+body.dark-mode .theme-changer {
+  color: var(--primary);
+  background-color: #111418;
+}
+
+body.dark-mode .theme-changer:hover {
+  color: var(--light);
+}
+
+
+@media (max-width: 1200px) {
+  .theme-changer {
+    position: fixed;
+    top: 30px;
+    right: 50px;
+    font-size: 30px;
   }
 }

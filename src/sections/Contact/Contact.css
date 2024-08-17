@@ -1,6 +1,6 @@
 /* Overall Section Styling */
 .contact {
-    background-color: #fff;
+    background-color: var(--bg-section);
     padding: 40px;
     border-radius: 8px;  
     margin-top: 3rem;
@@ -26,13 +26,13 @@
   .contact-header p {
     font-size: 12px;
     font-weight: 400;
-    color: #333;
+    color:  var(--dark);
   }
 
   
   .contact-header .nav-icon {
     font-size: 15px;
-    color: #333;
+    color:  var(--dark);
   }
   
 
@@ -44,13 +44,13 @@
   .contact-desc h2 {
     font-size: 28px;
     font-weight: bold;
-    color: #333;
+    color:  var(--dark);
     margin-bottom: 10px;
   }
   
   .contact-desc p {
     font-size: 16px;
-    color: #666;
+    color: var(--light);
     line-height: 1.6;
     padding-right: 100px;
   }
@@ -91,7 +91,7 @@
   .contact-form .form-title {
     font-size: 24px;
     font-weight: bold;
-    color: #333;
+    color:  var(--dark);
     margin-bottom: 20px;
     text-align: center;
   }
@@ -113,7 +113,7 @@
     border: 1px solid #ddd;
     border-radius: 8px;
     font-size: 16px;
-    color: #333;
+    color:  #000;
     transition: border-color 0.3s ease;
   }
   
@@ -129,7 +129,7 @@
   
   .contact-form .form-btn {
     background-color: var(--primary);
-    color: #fff;
+    color: var(--bg-section);
     padding: 15px;
     border: none;
     border-radius: 8px;
@@ -144,7 +144,7 @@
   }
   
   .contact-form .form-btn:hover {
-    background-color: #fff;
+    background-color: var(--bg-section);
     color: var(--primary);
     border: 1px solid var(--primary);
     transform: scale(1.05);
@@ -214,8 +214,7 @@
   }
 
   .mapbox iframe {
-    width: 100%;
-    max-width: 720px;
+    max-width: 1020px;
   }
 }
 
@@ -252,8 +251,7 @@
   }
 
   .mapbox iframe {
-    width: 100%;
-    height: 430px;
+    max-width: 920px;
   }
 }
 
@@ -287,7 +285,7 @@
 
   .mapbox iframe {
     width: 100%;
-    height: 380px;
+    width: 520px;
   }
 }
 
@@ -321,7 +319,8 @@
 
   .mapbox iframe {
     width: 100%;
-    height: 320px;
+    max-width: 550px;
+
   }
 }
 
@@ -355,8 +354,7 @@
 
   .mapbox iframe {
     width: 100%;
-    max-width: 500px;
-    height: 300px;
+    max-width: 480px;
   }
 }
 
@@ -390,6 +388,6 @@
 
   .mapbox iframe {
     width: 100%;
-    height: 200px;
+    height: 300px;
   }
 }

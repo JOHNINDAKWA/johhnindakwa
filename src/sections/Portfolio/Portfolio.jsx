@@ -64,7 +64,7 @@ const Portfolio = () => {
 
       {visibleProjects < portfolioData.length && (
         <button className="view-more-button" onClick={loadMoreProjects}>
-          View More Projects
+          Load More Projects
         </button>
       )}
 

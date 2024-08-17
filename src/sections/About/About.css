@@ -1,6 +1,6 @@
 /* Overall Section Styling */
 .about {
-  background-color: #fff;
+  background-color: var(--bg-section);
   padding: 40px;
   border-radius: 8px;  
   margin-top: 3rem;
@@ -23,12 +23,12 @@
 .about-header p {
   font-size: 12px;
   font-weight: 400;
-  color: #333;
+  color:  var(--dark);
 }
 
 .about-header .nav-icon {
   font-size: 15px;
-  color: #333;
+  color:  var(--dark);
 }
 
 /* Description Section Styling */
@@ -39,15 +39,15 @@
 .about-desc h2 {
   font-size: 28px;
   font-weight: bold;
-  color: #333;
+  color:  var(--dark);
   margin-bottom: 10px;
 }
 
 .about-desc p {
   font-size: 16px;
-  color: #666;
+  color: var(--light);
   line-height: 1.6;
-  padding-right: 100px;
+  max-width: 42rem;
 }
 
 .about-desc span {
@@ -65,7 +65,7 @@
 
 .about-skills p {
   font-size: 16px;
-  color: #333;
+  color:  var(--dark);
   padding: 10px 12px;
   border-radius: 40px;
   border: 1px dashed var(--border);
@@ -89,7 +89,7 @@
 
 .about-details li {
   font-size: 16px;
-  color: #333;
+  color:  var(--dark);
   margin-bottom: 10px;
 }
 
@@ -101,7 +101,7 @@
 }
 
 .about-details b {
-  color: #555;
+  color: var(--light);
 }
 
 /* Numbers Section Styling */
@@ -121,13 +121,13 @@
 .nums-item-colomn h1 {
   font-size: 36px;
   font-weight: bold;
-  color: var(--primary); /* Use your primary color */
+  color: var(--primary);
   margin: 0;
 }
 
 .nums-item-colomn p {
   font-size: 16px;
-  color: #666;
+  color: var(--light);
   margin: 0;
 }
 

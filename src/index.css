@@ -4,9 +4,25 @@
 
 
 :root {
-    /* --primary: #00bc91; */
     --primary: #e78211;
     --border: rgb(213, 220, 226);
+    --bg-line: #f2f5f8;
+    --bg-section: #fff;
+    --line: #ccc;
+    --dark: #333;
+    --light: #666;
+    --skill-border:#f2f5f8;
+}
+
+.dark-mode {
+  --bg-line: #18191a;
+  --bg-section: #212223;
+  --text-color: #fff;
+  --line:#393a3c;
+  --dark: #fff;
+  --light: #999999;
+  --skill-border:#404041b4;
+  --border: #353535;
 }
 
 

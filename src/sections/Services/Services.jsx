@@ -6,6 +6,7 @@ import { AiOutlineDropbox } from "react-icons/ai";
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
 import Slider from "react-slick";
 import { PiGraduationCapLight } from "react-icons/pi";
+import Marquee from "react-fast-marquee";
 
 const skillsData = [
   {
@@ -52,41 +53,64 @@ const skillsData = [
   },
 ];
 
-const Services = () => {
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000,
-    centerMode: true,
-    centerPadding: "0",
-    arrows: true,
-    rows: 1,
-    responsive: [
-      {
-        breakpoint: 1200,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
-      {
-        breakpoint: 992,
-        settings: {
-          slidesToShow: 2,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-        },
-      },
-    ],
-  };
+const skillsData2 = [
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/figma.svg",
+    alt: "React",
+    percentage: "90%",
+    name: "React",
+  },
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/webflow.svg",
+    alt: "R-Native",
+    percentage: "90%",
+    name: "R-Native",
+  },
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/tailwind.svg",
+    alt: "Laravel",
+    percentage: "80%",
+    name: "Laravel",
+  },
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/html.svg",
+    alt: "Vue",
+    percentage: "80%",
+    name: "Vue",
+  },
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/css.svg",
+    alt: "Next Js",
+    percentage: "85%",
+    name: "NextJs",
+  },
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/js.svg",
+    alt: "Java",
+    percentage: "90%",
+    name: "Java",
+  },
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/jquery.svg",
+    alt: "jQuery",
+    percentage: "95%",
+    name: "Python",
+  },
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/js.svg",
+    alt: "Kotlin",
+    percentage: "90%",
+    name: "Kotlin",
+  },
+  {
+    src: "https://html.themestransmit.com/html/minfotailwind/assets/img/skill/jquery.svg",
+    alt: "TensorFlow",
+    percentage: "95%",
+    name: "Tensorflow",
+  },
+];
 
+const Services = () => {
   return (
     <section className="services" id="service">
       <div className="services-header">
@@ -140,20 +164,39 @@ const Services = () => {
           Area of <span>Expertise</span>
         </h2>
         <p>
-        Harnessing cutting-edge tools and technologies to deliver outstanding results.
+          Harnessing cutting-edge tools and technologies to deliver outstanding
+          results.
         </p>
       </div>
 
       <section className="skills-carousel" id="skills">
-        <Slider {...settings}>
+        <Marquee gradient={false} speed={30}>
           {skillsData.map((skill, index) => (
-            <div className="skill-item" key={index}>
+            <div
+              className="skill-item"
+              key={index}
+              data-percentage={skill.percentage}
+            >
               <img src={skill.src} alt={skill.alt} />
               <h3>{skill.percentage}</h3>
               <p>{skill.name}</p>
             </div>
           ))}
-        </Slider>
+        </Marquee>
+
+        <Marquee gradient={false} speed={30} direction="right">
+          {skillsData2.map((skill, index) => (
+            <div
+              className="skill-item"
+              key={index}
+              data-percentage={skill.percentage}
+            >
+              <img src={skill.src} alt={skill.alt} />
+              <h3>{skill.percentage}</h3>
+              <p>{skill.name}</p>
+            </div>
+          ))}
+        </Marquee>
       </section>
     </section>
   );

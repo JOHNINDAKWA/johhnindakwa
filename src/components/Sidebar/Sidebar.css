@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #fff;
+  background-color: var(--bg-section);
   position: fixed;
   left: 15%; 
   top: 50%; 
@@ -41,12 +41,18 @@
   }
 }
 
+.dark-mode .sidebar-top img {
+  animation: none; 
+  clip-path: path('M 50 0 C 75 0 100 25 100 50 C 100 75 75 100 50 100 C 25 100 0 75 0 50 C 0 25 25 0 50 0 Z');
+}
+
 
 
 .sidebar-top h4 {
   margin: 2px 0 5px;
   font-size: 1.5rem;
   font-weight: 700;
+  color: var(--dark);
 }
 
 .sidebar-top p {
@@ -76,17 +82,18 @@
   margin: 0;
   font-size: 0.875rem;
   line-height: 1.25rem;
+  color: var(--dark);
 }
 
 .sidebar-middle span {
   font-size: 0.875rem;
   line-height: 1.25rem;
   font-weight: 300;
-  color: #636666;
+  color: var(--light);
 }
 
 .sidebar-bottom {
-  background: #f0f2f5;
+  background: var(--bg-line);
   width: 100%;
   padding: 5px 1rem;
   border-radius: 20px;
@@ -96,7 +103,7 @@
   margin-bottom: 10px;
   font-size: 1.2rem;
   font-weight: 700;
-  color: #000;
+  color: var(--dark);
   margin-left: 1rem;
 }
 
@@ -119,19 +126,20 @@
 .sidebar-bottom p {
   margin: 0;
   font-size: 1rem;
+  color: var(--dark);
 }
 
 .sidebar-bottom span {
   font-size: 1rem;
   font-weight: 700;
-  color: #000;
+  color: var(--dark);
 }
 
 .btn-download {
   margin: auto;
   padding: 10px 20px;
   background-color: var(--primary);
-  color: white;
+  color: var(--bg-section);
   text-decoration: none;
   border-radius: 15px;
   font-weight: 500;
@@ -163,12 +171,15 @@
 }
 
 .icon-btn {
-  color: #fff;
+  color: var(--bg-section);
   font-weight: 600;
   font-size: 20px;
   display: inline-block;
   animation: bounce 2s infinite;
 }
+
+
+
 
 .btn-download:hover .icon-btn{
   color: var(--primary);
