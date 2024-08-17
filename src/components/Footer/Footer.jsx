@@ -76,7 +76,6 @@ const Footer = () => {
           </div>
         )}
       </div>
-      
       <button className="theme-changer" onClick={toggleThemeMode}>
         {isDarkMode ? <MdLightMode /> : <RiMoonFill />}
       </button>

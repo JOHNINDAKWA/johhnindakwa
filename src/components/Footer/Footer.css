@@ -197,11 +197,3 @@ body.dark-mode .theme-changer:hover {
 }
 
 
-@media (max-width: 1200px) {
-  .theme-changer {
-    position: fixed;
-    top: 30px;
-    right: 50px;
-    font-size: 30px;
-  }
-}
