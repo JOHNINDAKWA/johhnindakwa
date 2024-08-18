@@ -22,10 +22,10 @@ const Skills = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    centerMode: true, /* This enables the overlapping effect */
-    centerPadding: '0', /* Remove any padding around centered item */
-    arrows: true, /* Show navigation arrows */
-    rows: 1, /* Ensure only one row of items is displayed */
+    centerMode: true, 
+    centerPadding: '0', 
+    arrows: true, 
+    rows: 1,
   };
 
   return (

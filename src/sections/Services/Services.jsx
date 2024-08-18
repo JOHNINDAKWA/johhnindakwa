@@ -170,7 +170,7 @@ const Services = () => {
       </div>
 
       <section className="skills-carousel" id="skills">
-        <Marquee gradient={false} speed={30}>
+        <Marquee gradient={false} speed={30} pauseOnHover>
           {skillsData.map((skill, index) => (
             <div
               className="skill-item"
@@ -184,7 +184,7 @@ const Services = () => {
           ))}
         </Marquee>
 
-        <Marquee gradient={false} speed={30} direction="right">
+        <Marquee gradient={false} speed={30} direction="right" pauseOnHover>
           {skillsData2.map((skill, index) => (
             <div
               className="skill-item"
