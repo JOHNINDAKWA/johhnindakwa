@@ -145,6 +145,7 @@
 @media (max-width: 768px) {
   .modal-content {
     max-width: 90%;
+    max-height: 80%;
     padding: 15px;
     margin-top: 20px;
     overflow-y: auto;

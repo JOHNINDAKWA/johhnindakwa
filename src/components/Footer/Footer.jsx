@@ -34,7 +34,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer-copy">
-        <p>Copyright © 2024 @johnkulundu. All Rights Reserved.</p>
+        <p>Copyright © 2018 @johnkulundu. All Rights Reserved.</p>
       </div>
 
 
