@@ -188,11 +188,12 @@
 
 .skill-item {
   display: inline-block;
-  padding: 25px 30px;
+  padding: 10px 15px;
   text-align: center;
   border: 1px solid var(--skill-border);
   margin: 15px 5px;
   width: 100px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
 .skill-item img {

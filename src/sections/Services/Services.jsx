@@ -170,30 +170,49 @@ const Services = () => {
       </div>
 
       <section className="skills-carousel" id="skills">
-        <Marquee gradient={false} speed={30} pauseOnHover>
+        <Marquee gradient={false} speed={25} pauseOnHover>
           {skillsData.map((skill, index) => (
             <div
               className="skill-item"
               key={index}
               data-percentage={skill.percentage}
             >
-              <img src={skill.src} alt={skill.alt} />
-              <h3>{skill.percentage}</h3>
-              <p>{skill.name}</p>
+              <p>#{skill.name}</p>
             </div>
           ))}
         </Marquee>
 
-        <Marquee gradient={false} speed={30} direction="right" pauseOnHover>
+        <Marquee gradient={false} speed={25} direction="right" pauseOnHover>
           {skillsData2.map((skill, index) => (
             <div
               className="skill-item"
               key={index}
               data-percentage={skill.percentage}
             >
-              <img src={skill.src} alt={skill.alt} />
-              <h3>{skill.percentage}</h3>
-              <p>{skill.name}</p>
+              <p>#{skill.name}</p>
+            </div>
+          ))}
+        </Marquee>
+        <Marquee gradient={false} speed={20} pauseOnHover>
+          {skillsData.map((skill, index) => (
+            <div
+              className="skill-item"
+              key={index}
+              data-percentage={skill.percentage}
+            >
+              <p>#{skill.name}</p>
+            </div>
+          ))}
+        </Marquee>
+
+        <Marquee gradient={false} speed={20} direction="right" pauseOnHover>
+          {skillsData2.map((skill, index) => (
+            <div
+              className="skill-item"
+              key={index}
+              data-percentage={skill.percentage}
+            >
+              <p>#{skill.name}</p>
             </div>
           ))}
         </Marquee>

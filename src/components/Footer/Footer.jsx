@@ -1,7 +1,6 @@
 import React, { useContext, useState } from "react";
 import "./Footer.css";
 import { MdLightMode, MdOutlineKeyboardDoubleArrowUp } from "react-icons/md";
-import { FaWhatsapp } from "react-icons/fa";
 import { IoIosColorPalette } from "react-icons/io";
 import { ThemeContext } from "../../ThemeContext";
 import { RiMoonFill } from "react-icons/ri";
@@ -34,7 +33,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer-copy">
-        <p>Copyright © 2018 @johnkulundu. All Rights Reserved.</p>
+        <p>Copyright © 2018 @johnindakwa. All Rights Reserved.</p>
       </div>
 
 
