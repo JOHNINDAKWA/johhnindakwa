@@ -1,5 +1,6 @@
 import Agnes from '../../images/agnes.png';
 import Akitekt from '../../images/akitekt.png';
+import Realtor from '../../images/realtor.png';
 import Provence from '../../images/provence.png';
 import MyPortfolio from '../../images/john-portfolio.png';
 
@@ -14,6 +15,15 @@ const portfolioData = [
     link: "https://fastechinternet.co.ke/",
     technologies: "HTML, CSS, JAVASCRIPT, BOOTSTRAP",
     dateCompleted: "March 2024",
+},
+{
+  img: Realtor,
+  title: "Realtors Real Estate Agency",
+  description: "Crafted a comprehensive real estate platform designed to streamline property searches and enhance the home-buying experience.",
+  description2: "The website's sleek interface, coupled with intuitive navigation, allows users to effortlessly explore property listings, making it an essential tool for both buyers and sellers.",
+  link: "https://johnindakwa.github.io/realtorswebsite/",
+  technologies: "HTML, CSS, JavaScript, Bootstrap",
+  dateCompleted: "August 2024",
 },
 {
     img: "https://johnindakwa.github.io/CODE-ARKITEKTS/Images/projects/skyrich.png",
