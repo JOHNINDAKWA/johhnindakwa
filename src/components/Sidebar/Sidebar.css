@@ -278,26 +278,26 @@
   }
 
   .sidebar-top p {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .sidebar-middle p,
   .sidebar-middle span {
-    font-size: 0.8rem;
+    font-size: 1rem;
   }
 
   .sidebar-bottom h3 {
-    font-size: 1.1rem;
+    font-size: 1.0rem;
   }
 
   .sidebar-bottom p,
   .sidebar-bottom span {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
   }
 
   .btn-download {
     padding: 8px 16px;
-    font-size: 0.9rem;
+    font-size: 1.0rem;
   }
 }
 
@@ -320,11 +320,11 @@
   }
 
   .sidebar-top h4 {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 
   .sidebar-top p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .sidebar-middle ul {
@@ -333,7 +333,7 @@
 
   .sidebar-middle p,
   .sidebar-middle span {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 
   .sidebar-bottom h3 {
@@ -346,12 +346,12 @@
 
   .sidebar-bottom p,
   .sidebar-bottom span {
-    font-size: 0.875rem;
+    font-size: 0.9rem;
   }
 
   .btn-download {
     padding: 5px 10px;
-    font-size: 0.875rem;
+    font-size: 0.9rem;
   }
 }
 
@@ -367,11 +367,11 @@
   }
 
   .sidebar-top h4 {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
 
   .sidebar-top p {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 
   .sidebar-middle ul {
@@ -380,11 +380,11 @@
 
   .sidebar-middle p,
   .sidebar-middle span {
-    font-size: 0.75rem;
+    font-size: 0.9rem;
   }
 
   .sidebar-bottom h3 {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
   }
 
   .sidebar-bottom ul {
@@ -393,11 +393,11 @@
 
   .sidebar-bottom p,
   .sidebar-bottom span {
-    font-size: 0.875rem;
+    font-size: 1.2rem;
   }
 
   .btn-download {
     padding: 5px 10px;
-    font-size: 0.75rem;
+    font-size: 1rem;
   }
 }

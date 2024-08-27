@@ -335,12 +335,12 @@
   }
 
   .contact-desc p {
-    font-size: 10px;
+    font-size: 14px;
     padding-right: 10px;
   }
 
   .contact-form .form-title {
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .contact-form .form-input {
@@ -365,16 +365,16 @@
   }
 
   .contact-desc h2 {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .contact-desc p {
-    font-size: 9px;
+    font-size: 14px;
     padding-right: 5px;
   }
 
   .contact-form .form-title {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .contact-form .form-input {
@@ -383,7 +383,7 @@
 
   .contact-form .form-btn {
     padding: 7px;
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .mapbox iframe {

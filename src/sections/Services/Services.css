@@ -95,7 +95,7 @@
 }
 
 .service-item p {
-  font-size: 16px;
+  font-size: 17px;
   color: var(--light);
   line-height: 1.5;
 }
@@ -246,7 +246,7 @@
 
   .services-desc p,
   .skills-desc p {
-      font-size: 14px;
+      font-size: 16px;
       padding-right: 30px;
   }
 

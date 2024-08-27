@@ -49,20 +49,20 @@ const Sidebar = () => {
       <div className="sidebar-middle">
         <ul>
           <li>
-            <p>Residence:</p>
-            <span>Juja</span>
+          <p>Availability:</p>
+          <span>Immediate</span>
           </li>
           <li>
-            <p>City:</p>
-            <span>Nairobi</span>
+          <p>Experience Level:</p>
+          <span>6+ Years</span>
           </li>
           <li>
-            <p>Marital Status:</p>
-            <span>Bachelor</span>
+          <p>Open to:</p>
+          <span>Remote/Freelance</span>
           </li>
           <li>
-            <p>Nationality:</p>
-            <span>Kenyan</span>
+          <p>Specialization:</p>
+          <span>Full-Stack</span>
           </li>
 
         </ul>
