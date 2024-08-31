@@ -1,4 +1,5 @@
 .mobile-navbar {
+    display: none;
     position: relative;
     width: 100%;
 }
@@ -135,19 +136,19 @@
 
 
 @media (max-width: 1200px) {
-    .mobile-nav-top {
-        display: flex;
+ 
+    .mobile-navbar {
+        display: block;
     }
 }
 
-@media (min-width: 1400px) {
-    .mobile-navbar {
-        display: none;
-    }
-}
 
 
 @media (max-width: 768px) {
+
+    .mobile-navbar {
+        display: block;
+    }
     .mobile-nav-top {
         display: flex;
     }
@@ -155,6 +156,10 @@
 
 
 @media (max-width: 576px) {
+
+    .mobile-navbar {
+        display: block;
+    }
     .mobile-nav-top {
         display: flex;
     }

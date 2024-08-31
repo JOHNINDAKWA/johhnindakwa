@@ -126,7 +126,7 @@
   border-radius: 50%;
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1200px) {
   .navbar {
     display: none;
   }

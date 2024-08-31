@@ -77,3 +77,11 @@
         top: -8px; 
     }
 }
+
+@media (max-width: 1400px) {
+    .line-wrapper {
+
+        width: 110%;
+
+    }
+}

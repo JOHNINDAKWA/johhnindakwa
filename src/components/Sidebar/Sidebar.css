@@ -227,7 +227,8 @@
 /* For screens 1400px and wider */
 @media (max-width: 1400px) {
   .sidebar {
-    left: 13%;
+    left: 15%;
+    top: 60%;
   }
 }
 
@@ -237,7 +238,7 @@
     width: 50%;
     left: 50%;
     transform: translateX(-50%);
-    top: 10%;
+    top: 12%;
     position: absolute;
   }
 }
