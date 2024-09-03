@@ -30,16 +30,16 @@ const Skills = () => {
 
   return (
     <section className="skills" id='skills'>
-      <div className="skills-header">
+      <div className="skills-header" data-aos="zoom-in">
         <PiGraduationCapLight className="nav-icon" />
         <p>My Expertise</p>
       </div>
 
       <div className="skills-desc">
-        <h2>
+        <h2 data-aos="zoom-in">
           My <span>Advantages</span>
         </h2>
-        <p>
+        <p >
           I design products that are more than pretty. I make them shippable and usable.
         </p>
       </div>

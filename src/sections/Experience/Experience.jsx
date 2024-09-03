@@ -5,47 +5,27 @@ import { IoBriefcaseOutline } from "react-icons/io5";
 const Experience = () => {
   return (
     <section className="experience" id="experience">
-      <div className="experience-header">
+      <div className="experience-header" data-aos="zoom-in">
         <IoBriefcaseOutline className="nav-icon" />
         <p>My RESUME</p>
       </div>
 
-      <div className="experience-desc">
-        <h2>
+      <div className="experience-desc" >
+        <h2 data-aos="zoom-in">
           My <span>Biography</span>
         </h2>
-        <p>
+        <p >
           I am an IT professional with expertise in front-end and back-end
           development. I specialize in the MERN stack, PHP, and cloud solutions,
           always focusing on creating user-friendly and efficient applications.
         </p>
       </div>
 
-      <div className="timeline">
+      <div className="timeline" >
         <div className="timeline-divider">
-          <ul className="timeline-list" data-aos="fade-right">
-            <li className="timeline-item">
-              <h4 className="timeline-item-title">
-                Underwriting Intern, Incourage
-              </h4>
-              <span>April 2024</span>
-              <p className="timeline-text">
-                Handled policy cancellations, new issues, and cover extensions.
-              </p>
-            </li>
-            <li className="timeline-item">
-              <h4 className="timeline-item-title">
-                Research Assistant, Kenya National Bureau of Statistics
-              </h4>
-              <span>March 2024</span>
-              <p className="timeline-text">
-                Conducted interviews and ensured accurate data entry.
-              </p>
-            </li>
-          </ul>
 
-          <ul className="timeline-list" data-aos="fade-left">
-            <li className="timeline-item">
+          <ul className="timeline-list" >
+            <li className="timeline-item" data-aos="fade-down">
               <h4 className="timeline-item-title">
               KCB Intern
               </h4>
@@ -54,7 +34,7 @@ const Experience = () => {
               Managed data and accounts and other Bank stuff. Improved IT skills.
               </p>
             </li>
-            <li className="timeline-item">
+            <li className="timeline-item" data-aos="fade-down">
               <h4 className="timeline-item-title">
               Web Development Specialist, Fastech Solutions
               </h4>
@@ -67,13 +47,13 @@ const Experience = () => {
         </div>
       </div>
 
-      <div className="experience-header">
+      <div className="experience-header" data-aos="zoom-in">
       <FaSchoolFlag className="nav-icon"/>
         <p>PHRONTISTERY</p>
       </div>
 
-      <div className="experience-desc">
-        <h2>
+      <div className="experience-desc" >
+        <h2 data-aos="zoom-in">
           My <span>Indoctrination</span>
         </h2>
         <p>
@@ -85,8 +65,8 @@ const Experience = () => {
 
       <section id="education" className="timeline">
         <div className="timeline-divider">
-          <ul className="timeline-list" data-aos="fade-right">
-            <li className="timeline-item">
+          <ul className="timeline-list" >
+            <li className="timeline-item" data-aos="fade-down">
               <h4 className="timeline-item-title">
                 DEGREE IN INFORMATION TECHNOLOGY, JKUAT
               </h4>
@@ -95,7 +75,7 @@ const Experience = () => {
               Pursued personal projects in various technologies, demonstrating independent initiative and passion.
               </p>
             </li>
-            <li className="timeline-item">
+            <li className="timeline-item" data-aos="fade-down">
               <h4 className="timeline-item-title">
                 High School Education, KCSE
               </h4>
@@ -105,7 +85,7 @@ const Experience = () => {
               </p>
             </li>
 
-            <li className="timeline-item">
+            <li className="timeline-item" data-aos="fade-down">
               <h4 className="timeline-item-title">
                 HUAWEI HCIA DATACOM CERTIFICATION
               </h4>

@@ -4,16 +4,16 @@ import "./About.css";
 const About = () => {
   return (
     <section className="about" id="about">
-      <div className="about-header">
+      <div className="about-header" data-aos="zoom-in">
         <IoPersonOutline className="nav-icon" />
         <p>Yours Truly</p>
       </div>
 
-      <div className="about-desc">
-        <h2>
+      <div className="about-desc" >
+        <h2 data-aos="zoom-in">
           My <span>Abstract</span>
         </h2>
-        <p>
+        <p >
           Hello, I'm <span>John Indakwa</span>, a dedicated IT professional with
           a robust foundation in operating systems, networking, and software
           engineering. Over the past decade, I've immersed myself in both
@@ -50,19 +50,19 @@ const About = () => {
 
       <div className="about-nums">
         <div className="nums-item-colomn">
-          <h1>6+</h1>
+          <h1 data-aos="zoom-out">6+</h1>
           <p>Years of Experience</p>
         </div>
         <div className="nums-item-colomn">
-          <h1>30+</h1>
+          <h1 data-aos="zoom-out">30+</h1>
           <p>Handled Projects</p>
         </div>
         <div className="nums-item-colomn">
-          <h1>30+</h1>
+          <h1 data-aos="zoom-out">30+</h1>
           <p>Open Source Libraries</p>
         </div>
         <div className="nums-item-colomn">
-          <h1>3</h1>
+          <h1 data-aos="zoom-out">3</h1>
           <p>Awards Won</p>
         </div>
       </div>

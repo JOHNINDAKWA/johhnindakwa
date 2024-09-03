@@ -4,16 +4,16 @@ import { SiMinutemailer } from "react-icons/si";
 const Contact = () => {
   return (
     <section className="contact" id="contact">
-      <div className="contact-header">
+      <div className="contact-header" data-aos="zoom-in">
       <SiMinutemailer className="nav-icon"/>
         <p>Contact</p>
       </div>
 
       <div className="contact-desc">
-        <h2>
+        <h2 data-aos="zoom-in">
           Contact <span>Me</span>
         </h2>
-        <p>
+        <p >
           Am Available at any Moment. Just email, text or call. I won't disappoint.
         </p>
       </div>
@@ -34,7 +34,7 @@ const Contact = () => {
         </div>
 
         <div class="contact-form">
-          <h3 class="h3 form-title">Contact Form</h3>
+          <h3 class="h3 form-title" data-aos="zoom-in">Contact Form</h3>
 
           <form action="https://formspree.io/f/xzbnelbq" method="post" class="form" >
             <div class="input-wrapper">

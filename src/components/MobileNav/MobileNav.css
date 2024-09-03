@@ -28,6 +28,10 @@
     margin-right: 0.5rem;
   }
 
+  .mobile-navbar-img h3{
+    color: var(--dark);
+  }
+
 .navbar-img h3 {
     margin: 0;
     font-size: 1.2rem;

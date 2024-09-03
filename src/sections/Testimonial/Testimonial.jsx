@@ -7,12 +7,12 @@ import { FaCommentsDollar } from "react-icons/fa";
 const Testimonial = () => {
   return (
     <section className="testimonial" id="testimonial">
-      <div className="testimonial-header">
+      <div className="testimonial-header" data-aos="zoom-in">
       <FaCommentsDollar className="nav-icon" />
         <p>Affirmation</p>
       </div>
       <div className="testimonial-desc">
-        <h2>
+        <h2 data-aos="zoom-in">
           What <span>People Say</span>
         </h2>
         <p>

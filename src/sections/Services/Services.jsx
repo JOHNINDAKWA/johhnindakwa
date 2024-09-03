@@ -113,16 +113,16 @@ const skillsData2 = [
 const Services = () => {
   return (
     <section className="services" id="service">
-      <div className="services-header">
+      <div className="services-header" data-aos="zoom-in">
         <IoBriefcaseOutline className="nav-icon" />
         <p>Services</p>
       </div>
 
       <div className="services-desc">
-        <h2>
+        <h2 data-aos="zoom-in">
           My <span>Services</span>
         </h2>
-        <p>
+        <p >
           I design products that are more than pretty. I make them shippable and
           usable, ensuring every detail contributes to a seamless user
           experience.
@@ -154,13 +154,13 @@ const Services = () => {
         </div>
       </div>
 
-      <div className="skills-header">
+      <div className="skills-header" data-aos="zoom-in">
         <PiGraduationCapLight className="nav-icon" />
         <p>Profeciency</p>
       </div>
 
       <div className="skills-desc">
-        <h2>
+        <h2 data-aos="zoom-in">
           Area of <span>Expertise</span>
         </h2>
         <p>

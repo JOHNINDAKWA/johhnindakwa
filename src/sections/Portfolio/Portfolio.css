@@ -36,6 +36,37 @@
 }
 
 
+
+/* loading animation*/
+
+.loading-animation {
+  text-align: center;
+  margin: 20px 0;
+}
+
+.loading-animation p {
+  font-size: 16px;
+  color: var(--dark);
+}
+
+/* Simple spinner */
+.loading-animation::after {
+  content: "";
+  display: inline-block;
+  width: 24px;
+  height: 24px;
+  border: 3px solid  var(--light);
+  border-radius: 50%;
+  border-top: 3px solid #000;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
 /* Description Section Styling */
 .portfolio-desc {
   margin-bottom: 30px;
@@ -217,10 +248,19 @@
   }
 
   .portfolio-item {
-    width: calc(33% - 20px);
+    width: calc(50% - 20px);
   }
 
   .portfolio-item-details {
     padding: 0 20px 20px;
   }
+}
+
+/* Desktop Styles */
+@media (min-width: 1450px) {
+  .portfolio-item {
+    width: calc(33% - 40px);
+  }
+
+
 }

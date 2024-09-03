@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Home from "../../sections/Home/Home";
 import "./Main.css";
 import About from "./../../sections/About/About";
@@ -12,8 +12,18 @@ import Testimonial from "../../sections/Testimonial/Testimonial";
 import Contact from "../../sections/Contact/Contact";
 import Footer from "../Footer/Footer";
 import MobileNav from "../MobileNav/MobileNav";
+import 'aos/dist/aos.css'
+import AOS from 'aos';
+
+
 
 const Main = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000, delay: 200 });
+  }, []);
+  
+
+
   return (
     <div>
       

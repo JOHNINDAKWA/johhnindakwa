@@ -9,6 +9,14 @@ const Sidebar = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [typingSpeed, setTypingSpeed] = useState(200);
 
+  // State to track the animated percentage values
+  const [skills, setSkills] = useState({
+    react: 0,
+    laravel: 0,
+    native: 0,
+    php: 0,
+  });
+
   useEffect(() => {
     const texts = [
       "I'm a Web Developer",
@@ -38,6 +46,41 @@ const Sidebar = () => {
     return () => clearTimeout(timer);
   }, [currentText, isDeleting, currentTextIndex, typingSpeed]);
 
+  useEffect(() => {
+    const targetSkills = {
+      react: 92,
+      laravel: 75,
+      native: 86,
+      php: 80,
+    };
+
+    // Animate percentage values
+    const animateSkills = () => {
+      const increment = 1;
+      const interval = 80; 
+      const skillKeys = Object.keys(targetSkills);
+
+      skillKeys.forEach((key) => {
+        const target = targetSkills[key];
+        let current = 0;
+
+        const intervalId = setInterval(() => {
+          if (current < target) {
+            current += increment;
+            setSkills((prevSkills) => ({
+              ...prevSkills,
+              [key]: Math.min(current, target), // Ensure it doesn't exceed the target
+            }));
+          } else {
+            clearInterval(intervalId);
+          }
+        }, interval);
+      });
+    };
+
+    animateSkills();
+  }, []);
+
   return (
     <div className="sidebar">
       <div className="sidebar-top">
@@ -49,22 +92,21 @@ const Sidebar = () => {
       <div className="sidebar-middle">
         <ul>
           <li>
-          <p>Availability:</p>
-          <span>Immediate</span>
+            <p>Availability:</p>
+            <span>Immediate</span>
           </li>
           <li>
-          <p>Experience Level:</p>
-          <span>6+ Years</span>
+            <p>Experience Level:</p>
+            <span>6+ Years</span>
           </li>
           <li>
-          <p>Open to:</p>
-          <span>Remote/Freelance</span>
+            <p>Open to:</p>
+            <span>Remote/Freelance</span>
           </li>
           <li>
-          <p>Specialization:</p>
-          <span>Full-Stack</span>
+            <p>Specialization:</p>
+            <span>Full-Stack</span>
           </li>
-
         </ul>
       </div>
 
@@ -72,19 +114,19 @@ const Sidebar = () => {
         <h3>Skills</h3>
         <ul>
           <li>
-            <p>90%</p>
+            <p>{skills.react}%</p>
             <span>React</span>
           </li>
           <li>
-            <p>85%</p>
+            <p>{skills.laravel}%</p>
             <span>Laravel</span>
           </li>
           <li>
-            <p>90%</p>
+            <p>{skills.native}%</p>
             <span>Native</span>
           </li>
           <li>
-            <p>85%</p>
+            <p>{skills.php}%</p>
             <span>PHP</span>
           </li>
         </ul>

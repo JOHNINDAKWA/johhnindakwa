@@ -73,8 +73,7 @@
     border: none;
     border-radius: 8px;
     transition: filter 0.3s ease;
-    
-    width: 800px;
+    width: 600px;
     height: 400px;
   }
   
@@ -214,7 +213,8 @@
   }
 
   .mapbox iframe {
-    max-width: 1020px;
+    max-width: 100%;
+    width: 1020px;
   }
 }
 

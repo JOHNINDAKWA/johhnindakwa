@@ -65,43 +65,43 @@ const Home = () => {
 
   return (
     <section className="home" id="home">
-      <div className="header">
+      <div className="header" data-aos="zoom-in">
         <FaHome className="nav-icon" />
         <p>THE EPITOME</p>
       </div>
 
       <div className="home-mid">
         <div className="mid-left">
-          <h2>
+          <h2 data-aos="zoom-in">
             Shaping The <br /> <span>Future of Digital Solutions</span>
           </h2>
-          <p>
+          <p >
             As a dedicated Frontend Developer, I build features tailored to
             deliver exceptional user experiences.
           </p>
 
           <div className="flex-items">
-            <div className="flex-items-item">
+            <div className="flex-items-item" >
               <IoCheckmarkDone className="item-icon" />
               <p>Available for work</p>
             </div>
-            <div className="flex-items-item">
+            <div className="flex-items-item" >
               <IoCheckmarkDone className="item-icon" />
               <p>Full Time Job</p>
             </div>
           </div>
 
           <div className="buttons-flex">
-            <a href="#contact" className="btn-hire">
+            <a href="#contact" className="btn-hire" data-aos="zoom-out">
               Hire Me
             </a>
-            <a href="#portfolio" className="btn-work">
+            <a href="#portfolio" className="btn-work" data-aos="zoom-out">
               My Works
             </a>
           </div>
         </div>
 
-        <div className="mid-right">
+        <div className="mid-right" data-aos="fade-up-left">
           <img src={currentImage} alt="" />
         </div>
       </div>
