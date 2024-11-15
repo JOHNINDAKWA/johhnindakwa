@@ -4,7 +4,7 @@ import { AiOutlineKubernetes } from "react-icons/ai";
 import { AiOutlineGitlab } from "react-icons/ai";
 import { AiOutlineDropbox } from "react-icons/ai";
 import { AiOutlineDeploymentUnit } from "react-icons/ai";
-import Slider from "react-slick";
+// import Slider from "react-slick";
 import { PiGraduationCapLight } from "react-icons/pi";
 import Marquee from "react-fast-marquee";
 

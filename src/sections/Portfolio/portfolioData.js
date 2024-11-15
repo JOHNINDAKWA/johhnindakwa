@@ -3,6 +3,8 @@ import Akitekt from '../../images/akitekt.png';
 import Realtor from '../../images/realtor.png';
 import Provence from '../../images/provence.png';
 import MyPortfolio from '../../images/john-portfolio.png';
+import Fastech from '../../images/image.png'
+import Miranda from '../../images/miranda.png'
 
 
 const portfolioData = [
@@ -34,15 +36,37 @@ const portfolioData = [
     technologies: "NEXTJS, CSS, JAVASCRIPT, TAILWIND CSS",
     dateCompleted: "March 2024",
 },
+
 {
-    img: "https://johnindakwa.github.io/CODE-ARKITEKTS/Images/projects/ebony.png",
-    title: "Ebony Beauty Salon",
-    description: "Developed a chic and inviting website for a beauty salon, emphasizing elegance and sophistication to attract a fashion-forward clientele.",
-    description2: "The website's design mirrors the salon's commitment to beauty and luxury, making it an essential tool for attracting style-conscious customers.",
-    link: "https://johnindakwa.github.io/Ebony-Salon/",
-    technologies: "VueJs, Tailwind CSS",
-    dateCompleted: "June 2023",
+  img: Fastech,
+  title: "Fastech Solutions Ltd.",
+  description: "Delivering exceptional IT solutions tailored to meet the unique needs of businesses. Fastech Solutions provides rapid-response IT support, ensuring seamless technology integration for clients.",
+  description2: "From emergency troubleshooting to long-term strategic planning, Fastech Solutions is dedicated to helping businesses harness the power of technology with expertise and reliability.",
+  link: "https://fastechsolutions.vercel.app",
+  technologies: "REACTJS, CSS, JAVASCRIPT, TAILWIND CSS",
+  dateCompleted: "March 2024",
 },
+
+{
+  img: "https://johnindakwa.github.io/CODE-ARKITEKTS/Images/projects/ebony.png",
+  title: "Ebony Beauty Salon",
+  description: "Developed a chic and inviting website for a beauty salon, emphasizing elegance and sophistication to attract a fashion-forward clientele.",
+  description2: "The website's design mirrors the salon's commitment to beauty and luxury, making it an essential tool for attracting style-conscious customers.",
+  link: "https://johnindakwa.github.io/Ebony-Salon/",
+  technologies: "VueJs, Tailwind CSS",
+  dateCompleted: "June 2023",
+},
+
+{
+  img: Miranda,
+  title: "Monica Miranda Photography",
+  description: "Monica Miranda is a wedding photographer and videographer, specializing in capturing authentic, joyful moments with elegance, artistry, and intention.",
+  description2: "With a timeless, film-inspired style, Monica Miranda Photography creates stunning images that honor the heart of your wedding day—celebrating your unique love story and preserving every cherished detail for generations to come.",
+  link: "https://monicamiranda.vercel.app",
+  technologies: "REACTJS, CSS, JAVASCRIPT, TAILWIND CSS",
+  dateCompleted: "March 2024",
+},
+
 {
     img: "https://johnindakwa.github.io/CODE-ARKITEKTS/Images/projects/autoassist.png",
     title: "AutoAssist IT Management System",
